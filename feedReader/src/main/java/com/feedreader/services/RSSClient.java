@@ -53,7 +53,6 @@ public class RSSClient implements RSSService {
 
 	}
 
-	@Override
 	public List<Message> getBlogList() {
 
 		container.clearData();
@@ -83,7 +82,6 @@ public class RSSClient implements RSSService {
 		return blogMessages;
 	}
 
-	@Override
 	public List<Message> getNewsList() {
 
 		container.clearData();
@@ -109,7 +107,6 @@ public class RSSClient implements RSSService {
 		return newsMessages;
 	}
 
-	@Override
 	public List<Message> getMedienList() {
 
 		container.clearData();
@@ -136,7 +133,6 @@ public class RSSClient implements RSSService {
 		return MedienMessages;
 	}
 
-	@Override
 	public List<Message> getBlog(String guid) {
 
 		List<Message> blogMessages = new ArrayList<Message>();
@@ -167,7 +163,6 @@ public class RSSClient implements RSSService {
 		return blogMessages;
 	}
 
-	@Override
 	public List<Message> getNews(String guid) {
 
 		List<Message> newsMessages = new ArrayList<Message>();
@@ -291,7 +286,6 @@ public class RSSClient implements RSSService {
 		return isConnectedToWeb;
 	}
 
-	@Override
 	public boolean isConnected() {
 
 		return isWebRessourceConnected();
